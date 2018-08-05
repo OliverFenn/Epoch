@@ -8,6 +8,18 @@ GPIO.setmode(GPIO.BOARD)
 chan_list = [5] #This is the list of pins that I want to be GPIO pins
 GPIO.setup(chan_list, GPIO.OUT)
 GPIO.output(5, 1)
+sleep(1)
+GPIO.output(5, 0)
+sleep(1)
+GPIO.output(5, 1)
+sleep(1)
+GPIO.output(5, 0)
+sleep(1)
+GPIO.output(5, 1)
+sleep(1)
+GPIO.output(5, 0)
+sleep(1)
+
 Epoch = bin(int(time.time())) #get the time in binary
 print Epoch
 
